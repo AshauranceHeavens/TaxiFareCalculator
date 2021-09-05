@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+  height:fit-content;
+}
+header{
+  color: black;
+  text-shadow: -2px 2px 2px black;
+}
+header img{
+  width:30%;
+  margin: 40px auto 30px 35%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 18px black;
+  padding: 10px;
+}
+header nav{
+  color: #fff;
+  background: black;/*rgb(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  border-bottom: 0.3px solid #fff;
+  /* width: 100%;s */
+}
+#ham div{
+  background: #fff;
+  width: 25px;
+  height: 3px;
+  margin-top: 3px;
+}
+header nav #side{
+  position: fixed;
+  background-color: rgb(32, 32, 32);
+  top:0;
+  right: 0;
+  bottom: 0;
+  /* border-left: 0.2px solid #fff; */
+  /* width: 70%; */
+  width:0;
+  transition: 0.2s ease;
+}
+#cross{
+  margin-left: 80%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+#cross div{
+  background: #fff;
+  width: 19px;
+  height: 3px;
+  margin-top: 3px;
+}
+.cross1{
+  transform: rotate(45deg) translate(3px, 5px);
+}
+.cross2{
+  transform: rotate(-45deg) translate(-1px, -1px);
+
+}
+#side ul{
+  padding:10px;
+  margin: 10% 0 0 0;
+}
+#side ul li{
+  list-style: none;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#side ul li:nth-child(2){
+  display: none;
+}
+#side ul li a{
+  color: #fff;
+  text-decoration:none;
+}
+header h1{
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 2px rgb(0,0,0, 0.5);
+}
+.subhead{
+  text-shadow: none;
+  margin: 0 10px 20px;
+  text-align: center;
+}
+hr{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+main{
+  background: #fff;
+  padding: 2vh 5%;
+}
+main img{
+  width:70%;
+}
+main video{
+  width: 90%;
+  /* height: calc(90% - 1500px); */
+  height:300px;
+  margin:5% 0 5% 7%;
+  box-shadow: 0px 0px 5px black;
+}
+main p{
+  text-align:justify;
+  width: 90%;
+  margin-left: 7%;
+}
+.sample-images{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  /* background-color: red; */
+  margin:5% 0 17% 0;
+}
+.sample-images img{
+  margin-left: 15%;
+}
+main a{
+  color: black;
+}
+main a:hover{
+  color: grey;
+  background-color: red;
+}
+.download{
+  color: #fff;
+  text-shadow: -2px 2px 2px black;
+  text-align: center;
+  display: block;
+  background: #28a745;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin:10px 10px 10px 15%;
+  padding: 10px 10px;
+  width: 70%;
+
+}
+.download:hover{
+  color: #fff;
+  text-shadow: -2px 2px 2px black;
+  background: #28a745;
+  border-radius: 5px;
+  margin:10px 10px 10px 15%;
+  padding: 10px 10px;
+  box-shadow: 0px 0px 8px black;
+}
+#version-number p{
+  width: 70%;
+  text-align: center;
+  margin:10px 10px 10px 15%;
+}
+footer{
+  color: #fff;
+  /* background: rgb(32,32,32); */
+  background: black;
+  padding: 2vh 5%;
+  margin:5% 0 5% 0;
+}
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: grey;
+}
+footer ul{
+  width: 70%;
+  margin: 10px 10px 10px 5%;
+}
+#view img{
+  height:100%;
+  /* width: ; */
+}
+
+@media only screen and (orientation: landscape) {
+  #view {
+    display: none;
+  }
+  #view img{
+    width:40%;
+    height: 140%;
+    margin: 10px 10px 40px 30%;
+  }
+}
+
+@media only screen and (min-width: 529px){
+  header img{
+    width:30%;
+    margin-left:35%;
+  }
+  header h1{
+    text-shadow: 2px 2px 2px rgb(0,0,0, 0.5);
+  }
+  hr{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .main-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 70px;
+    margin-left: 2%;
+    /* background: red; */
+    width: 90%;
+  }
+  .main-grid p{
+    margin:10% 10px 30px 60px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #ham{
+    display: none;
+  }
+  #cross{
+    display: none;
+  }
+  #side ul{
+    display: block;
+    margin: 5px 5px 5px 5px;
+    padding: 0;
+  }
+  #side ul li{
+    display: inline;
+    margin: 5px 5px 5px 20px;
+  }
+  header nav #side{
+    width: 290px !important;
+    position: static;
+    padding: 0;
+    background: inherit;
+    /* background: red; */
+  }
+  header nav figure{
+    margin: 5px 5px;
+  }
+}
+
+@media only screen and (min-width:885px){
+  header img{
+    width:20%;
+    margin:80px 20px 20px 40%;
+  }
+}
