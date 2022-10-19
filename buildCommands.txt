@@ -1,0 +1,18 @@
+This is the first command
+
+- cd android && ./gradlew bundle
+
+This is the second command 
+
+-cd .. && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+This is the third command(you must first cd into the android folder before executing this one)
+cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets
+
+
+
+
+
+
+// try this run on your app to fix being stuck on splash screen
+react-native run-android --no-packager && clear & make start 
