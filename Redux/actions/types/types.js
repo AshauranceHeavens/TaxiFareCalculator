@@ -1,0 +1,11 @@
+export const ADD_AMOUNT = 'ADD_AMOUNT';
+export const DELETE_AMOUNT = 'DELETE_AMOUNT';
+export const ADD_PRICE = 'ADD_PRICE';
+export const DELETE_PRICE = 'DELETE_PRICE';
+export const ADD_PEOPLE = 'ADD_PEOPLE';
+export const DELETE_PEOPLE = 'DELETE_PEOPLE';
+export const DELETE_ALL = 'DELETE_ALL';
+export const ADD_ROW = 'ADD_ROW';
+export const DELETE_ROW = 'DELETE_ROW';
+export const PRICE = 'PRICE';
+export const AMOUNT = 'AMOUNT';
